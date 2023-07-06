@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="display image to big screen from small image present in the form of thumbnails">
+	<meta name="keywords" content="flowers, Sunflowers">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- this one is used to dislay the title to the html page. -->
+	<title>Image Gallery | COMP1073 Client-Side JavaScript</title>
+	<link rel="stylesheet" href="css/gallery.css">
+	<!-- this one display image in the website top -->
+	<link rel="shortcut icon" href="images/flowers-pink-large.jpg" type="image/x-icon">
+</head>
+
+<body>
+	<h1>Image Gallery</h1>
+	<section id="gallery">
+		<figure>
+			<img id="large" src="images/flowers-pink-large.jpg" alt="" width="1200" height="800" />
+			<figcaption id="caption">Flower stall at the market in Munster</figcaption>
+		</figure>
+		<!-- onclick function is used to call display(this) which display images and caption by changing the image and caption to the above one -->
+		<ul>
+			<li><img onclick="display(this)" id='small-img' src="images/flowers-pink-small.jpg"
+					alt="Flower stall at the market in Munster" title="flowers-pink" width="240" height="160" />
+			</li>
+			<li><img onclick="display(this)" id="small-img" src="images/flowers-purple-small.jpg" alt="Sentmaring Park"
+					title="flowers-purple" width="240" height="160" /></li>
+			<li><img onclick="display(this)" id="small-img" src="images/flowers-red-small.jpg"
+					alt="Poppies in cornfield, this are Found in England and lowland parts of Wales and Scotland"
+					title="flowers-red" width="240" height="160" />
+			</li>
+			<li><img onclick="display(this)" id="small-img" src="images/flowers-white-small.jpg"
+					alt="Daffodils in Sentmaring park," title="flowers-white" width="240" height="160" />
+			</li>
+			<li><img onclick="display(this)" id="small-img" src="images/flowers-yellow-small.jpg"
+					alt="sun flowers are the only plants which will face the sun all the day along move around facing sun to grow themselves and the seeds on them are used to produce oil which is used for cooking."
+					title="flowers-yellow" width="240" height="160" /></li>
+		</ul>
+	</section>
+	<script src="js/gallery.js" type="text/JavaScript"></script>
+	<!-- PHOTO CREDITS
+	Sunflowers in the hamlet Dernekamp, Kirchspiel, Dülmen, North Rhine-Westphalia, Germany
+	By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=61514522
+
+	Poppies in cornfield, Dülmen, North Rhine-Westphalia, Germany
+	By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=40957238
+
+	Daffodils in Sentmaring park, Münster, North Rhine-Westfalia, Germany
+	By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=48211466
+
+	Sentmaring Park, Münster, North Rhine-Westphalia, Germany
+	By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=48576226
+
+	Market in Münster, North Rhine-Westphalia, Germany
+	By Dietmar Rabich - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=62071586
+	-->
+</body>
+
+</html>

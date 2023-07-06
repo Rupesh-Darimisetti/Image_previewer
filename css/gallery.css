@@ -1,0 +1,11 @@
+/* to diplay images in a row */
+ul {
+    list-style-type: none;
+    display: flex;
+    direction: row;
+}
+
+/* to show gap between the pimages in a row */
+ul img {
+    margin: 5px;
+}
